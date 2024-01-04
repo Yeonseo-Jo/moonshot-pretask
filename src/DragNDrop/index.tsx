@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import DndAPI from "./components/DndAPI";
+import ReactBeautifulDnd from "./components/ReactBeautifulDnd";
 
 const DragNDrop = () => {
   const METHOD_BTNS = [
     { id: 1, method: "직접 구현하기" },
-    { id: 2, method: "어쩌고 라이브러리 사용" },
+    { id: 2, method: "react-beautiful-dnd 사용" },
   ];
 
   const [targetMethod, setTargetMethod] = useState<number>();
@@ -18,6 +19,8 @@ const DragNDrop = () => {
     switch (targetMethod) {
       case 1:
         return <DndAPI />;
+      case 2:
+        return <ReactBeautifulDnd />;
     }
   };
 
