@@ -1,0 +1,43 @@
+.straight-line {
+  background-color: darkgray;
+  width: 30px;
+  height: 1px;
+}
+
+.taskbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.node-line-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.node-lines {
+  flex: 1;
+  width: 0.1em;
+  background-color: darkgray;
+}
+
+.node-m-line {
+  flex: 1;
+  width: 0.1em;
+  height: 0.1em;
+  background-color: darkgrey;
+}
+
+.krbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 118px;
+}
+
+.kr-tree-wrapper {
+  display: flex;
+
+  &.node-line-container:first-child .node-lines:first-child {
+    background-color: transparent;
+  }
+}

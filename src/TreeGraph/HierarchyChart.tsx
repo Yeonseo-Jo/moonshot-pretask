@@ -24,10 +24,6 @@ const HierarchyChart = () => {
               name: "Second Task",
               cssClass: "level3",
             },
-            {
-              name: "Third Task",
-              cssClass: "level3",
-            },
           ],
         },
         {
