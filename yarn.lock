@@ -1626,6 +1626,11 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-hierarchy-chart@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-hierarchy-chart/-/react-hierarchy-chart-0.0.3.tgz#af0f20e03d9f44883ca8a41d9f960cecc5d03f38"
+  integrity sha512-bTFwz8bR1q35VO3A5fA6zNm69dbGwgdQ26VdN0tAMLFxgC4EWujOL4lgj9QaF/7DWjYMfMYM4yfcFop8z/YOWw==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"

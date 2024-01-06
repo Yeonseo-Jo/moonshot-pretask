@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DragNDrop from "./DragNDrop";
 import Home from "./Home";
-import TreeGraph from "./TreeGraph";
+import HierarchyChart from "./TreeGraph/HierarchyChart";
 
 const Router = () => {
   return (
@@ -9,7 +9,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/drag-n-drop" element={<DragNDrop />} />
-        <Route path="/tree-graph" element={<TreeGraph />} />
+        <Route path="/tree-graph" element={<HierarchyChart />} />
       </Routes>
     </BrowserRouter>
   );
