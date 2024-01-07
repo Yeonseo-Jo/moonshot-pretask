@@ -2,6 +2,7 @@
   background-color: darkgray;
   width: 30px;
   height: 1px;
+  align-self: center;
 }
 
 .taskbox-wrapper {
@@ -31,6 +32,7 @@
 .krbox-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 118px;
 }
 
@@ -40,4 +42,23 @@
   &.node-line-container:first-child .node-lines:first-child {
     background-color: transparent;
   }
+}
+
+.okr-tree-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.task-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.kr-box {
+  display: flex;
+  align-items: center;
 }
