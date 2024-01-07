@@ -67,18 +67,24 @@ const KrBox = ({ text }: { text: string }) => {
 const TaskBox = ({ TaskText }: { TaskText: string }) => {
   return (
     <div className="task-box">
-      <div className="straight-line"></div>
-      {/* 이 자리에 children으로 받으면 됨 */}
+      <NodeLines />
       <div
-        style={{
-          backgroundColor: "darkGray",
-          color: "white",
-          padding: "10px",
-          width: "fit-content",
-          borderRadius: "10px",
-        }}
+        className="taskbox-box"
+        style={{ display: "flex", padding: "7px 0" }}
       >
-        {TaskText}
+        <div className="straight-line"></div>
+        {/* 이 자리에 children으로 받으면 됨 */}
+        <div
+          style={{
+            backgroundColor: "darkGray",
+            color: "white",
+            padding: "10px",
+            width: "fit-content",
+            borderRadius: "10px",
+          }}
+        >
+          {TaskText}
+        </div>
       </div>
     </div>
   );
@@ -112,13 +118,13 @@ export const KrTaskConatiner = ({
       className="kr-task-container"
       style={{
         display: "flex",
+        // marginBottom: "118px",
       }}
     >
       <KrBox text={KRText} />
       {Tasks.length !== 0 && (
         <>
           <div className="straight-line"></div>
-          <NodeLines />
           <div className="taskbox-wrapper">
             {Tasks.map(({ index, Task }) => {
               return <TaskBox key={index} TaskText={Task} />;
@@ -135,7 +141,12 @@ const KRVarients = ({ KRProps }: { KRProps: KeyResultTypes[] }) => {
   return (
     <div className="krbox-wrapper">
       {KRProps.map(({ index, KR, Tasks }) => {
-        return <KrTaskConatiner key={index} KRText={KR} Tasks={Tasks} />;
+        return (
+          <div className="krbox-children-wrapper" style={{ display: "flex" }}>
+            <NodeLines />
+            <KrTaskConatiner key={index} KRText={KR} Tasks={Tasks} />
+          </div>
+        );
       })}
     </div>
   );
@@ -154,7 +165,7 @@ const OKRTreeForm = ({
     <div className="okr-tree-form-container">
       <ObjectBox text={Objective} />
       <div className="kr-tree-wrapper">
-        <NodeLines />
+        {/* <NodeLines /> */}
         <KRVarients KRProps={KeyResults} />
       </div>
     </div>

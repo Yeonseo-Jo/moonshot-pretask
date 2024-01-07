@@ -25,8 +25,8 @@ export const OKR_DATA = {
       KR: "Key Result 3",
       Tasks: [
         { index: 1, Task: "Task 3-1" },
-        { index: 2, Task: "Task 3-2" },
-        { index: 3, Task: "Task 3-3" },
+        // { index: 2, Task: "Task 3-2" },
+        // { index: 3, Task: "Task 3-3" },
       ],
     },
   ],
