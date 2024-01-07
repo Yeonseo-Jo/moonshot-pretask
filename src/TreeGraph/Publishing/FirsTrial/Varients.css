@@ -1,0 +1,88 @@
+.straight-line {
+  background-color: darkgray;
+  width: 30px;
+  height: 1px;
+  align-self: center;
+}
+
+.taskbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 7px; */
+  padding: 50px 0; /*여기 값으로 KR 사이 조정*/
+}
+
+.node-line-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.node-lines {
+  flex: 1;
+  width: 0.1em;
+  background-color: darkgray;
+}
+
+.node-m-line {
+  /* flex: 1; */
+  width: 0.1em;
+  height: 0.1em;
+  background-color: darkgrey;
+}
+
+.krbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 118px; */
+}
+
+.kr-tree-wrapper {
+  display: flex;
+}
+
+.okr-tree-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.task-box {
+  display: flex;
+}
+
+.kr-box {
+  display: flex;
+  align-items: center;
+}
+
+/*맨 위, 아래 요소들 가지 안보이게*/
+.krbox-wrapper
+  > .krbox-children-wrapper:first-child
+  > .node-line-container
+  > .node-lines:first-child {
+  background-color: transparent;
+}
+
+.krbox-wrapper
+  > .krbox-children-wrapper:last-child
+  > .node-line-container
+  > .node-lines:last-child {
+  background-color: transparent;
+}
+
+.taskbox-wrapper
+  > .task-box:first-child
+  > .node-line-container
+  > .node-lines:first-child {
+  background-color: transparent;
+}
+
+.taskbox-wrapper
+  > .task-box:last-child
+  > .node-line-container
+  > .node-lines:last-child {
+  background-color: transparent;
+}
